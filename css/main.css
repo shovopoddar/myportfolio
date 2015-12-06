@@ -465,3 +465,31 @@ figure.effect-bubba:hover p {
 #filter li{display:inline-block}
 #filter li a{display:block;padding:7px 12px; color:#f1f1f1;border:2px solid #fff;text-decoration:none;font-family: 'Roboto', sans-serif;}
 #filter li a.active{ background:#000;transition:all 0.5s}
+ canvas{ display: block; vertical-align: bottom; } 
+#particles-js{
+  position:absolute; 
+width: 100%;
+ height: 100%; 
+ background-color: #b61924;
+ background-image: url(""); 
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-position: 50% 50%;
+}
+
+#my-face-container {
+height:200px;
+
+}
+
+
+.my-face {
+top:10%;
+left:45%;
+position:absolute;
+  border:5px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(../img/faces.jpg) left top / auto 150px repeat;
+}

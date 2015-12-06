@@ -16,32 +16,72 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
-		<section>
+	<style type="text/css">
+		.navbar-default{background:rgba(0,0,0,0.5);height:55px}
+		.navbar-default .nav>li>a{
+		padding:15px 12px;
+		color:#f5f5f5;
+		text-shadow:-1px 1px 1px #000;
+		}
+		.navbar-default .nav>li>a:hover{
 		
-		</section>
-		<section class="shuffle_section" style="background:url(img/cycle.jpg);background-size:cover;padding:2em 0 5em">
-			<div class="">
+		text-shadow:-1px 1px 1px #fd9;
+		}
+	.affix.navbar-default{position:fixed;width:100%;z-index:99;background:#000;transition:all 0.8s;min-height:45px;height:45px;}
+
+	</style>
+    <body>
+		<section class="particle-home-section" id="particle-it">
 			
+			<div id="particles-js"></div>
+			
+			
+		</section>
+		
+		<section class="shuffle_section" style="background:url(img/cycle.jpg);background-size:cover;padding:0em 0 10em">
+	
+		<!--<nav class="navbar navbar-default" data-spy="affix" data-offset-top="100">
+			  
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Shovo Poddar</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				 
+				  <ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Bio</a></li>					
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Stay-in-touch</a></li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</nav> -->
+			
+			
+			
+			<div class="">
+			<div id="my-face-container"><div class="my-face"></div></div>
 				<div class="container">
-					<div class="heading" style="margin-bottom:20px;">
-						
+					<div class="heading" style="margin-bottom:20px;">						
 						<h1 class="text-center" style="color:#f1f1f1">Our Awesome Websites</h1>
 					</div>
 					<ul id="filter">
-						<li><a class="active" href="#" data-group="all">All</a></li>
-						<li><a href="#" data-group="technology">Technology</a></li>
-						<li><a href="#" data-group="science">Science</a></li>
-						<li><a href="#" data-group="engineering">Engineering</a></li>
-						<li><a href="#" data-group="humanity">Humanity</a></li>
-						<li><a href="#" data-group="environment">Environment</a></li>
-						<li><a href="#" data-group="research">Research</a></li>
-						<li><a href="#" data-group="innovation">Innovation</a></li>
-						<li><a href="#" data-group="alternative">Alternative Energy</a></li>
-					</ul>
-					
-					<div id="grid" class="grid row gutter-0">						
-						
+						<li><a class="active" href="#" data-group="all">All Project</a></li>
+						<li><a href="#" data-group="technology">Web Design</a></li>
+						<li><a href="#" data-group="science">UI Design</a></li>
+						<li><a href="#" data-group="engineering">Wordpress</a></li>
+						<li><a href="#" data-group="engineering">Graphics Design</a></li>						
+					</ul>					
+					<div id="grid" class="grid row gutter-0">
 						<div class="col-md-3 col-sm-4 col-xs-6 item_t" data-groups='["all", "technology", "humanity", "engineering"]'>					
 							<figure class="effect-bubba">
 								<img src="img/property.jpg" alt="Item 1" class="img-responsive">
@@ -162,7 +202,9 @@
 								</figcaption>			
 							</figure>
 						</div>
-						
+					</div>
+					
+					<div class="intro">
 						
 					</div>
 				</div>
@@ -170,30 +212,13 @@
 			
 			</div>
 		</section>
+			
 		<script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>    
-        <script src="js/jquery.shuffle.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 		<script type="text/javascript">
-				$(document).ready(function() {
-						var $grid = $('#grid');
-						 
-					$grid.shuffle({
-						itemSelector: '.item_t' // the selector for the items in the grid
-					});
-				$('#filter a').click(function (e) {
-					e.preventDefault();
-						 
-					// set active class
-					$('#filter a').removeClass('active');
-					$(this).addClass('active');
-						 
-					// get group name from clicked item
-					var groupName = $(this).attr('data-group');
-						 
-					// reshuffle grid
-					$grid.shuffle('shuffle', groupName );
-					});
-				});
+			
 				
 	
 					
