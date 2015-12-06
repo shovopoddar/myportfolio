@@ -477,16 +477,16 @@ width: 100%;
 }
 
 #my-face-container {
-top:40%;
-left:45%;
-position:absolute;
-text-align:center;
-color:#fff;
+  top: 28%;
+  left: 43%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
 }
 
 
 .my-face {
-
+margin:0 auto;
   border:5px solid white;
   width: 150px;
   height: 150px;
